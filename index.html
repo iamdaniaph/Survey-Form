@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title> Portfolio | Madania Pangandamun</title>
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <source src="script.js" type="javascript">
+</head>
+
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Technical-Webinar Survey Form</h1>
+    <p id="description" class="description text-center">
+      Thank you for your participation. <br> Please help us to improve our webinar discussion.
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    
+    <div class="form-group">
+      <p>Why did you attend today's webinar?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select reason</option>
+        <option value="job"> For Job</option>
+        <option value="topic">Interesting Topic</option>
+        <option value="presenter">Knowledgeable Presenters</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>What percentage of the information was new to you?</p>
+      <label>
+        <input
+          name="new-information"
+          value="100"
+          type="radio"
+          class="input-radio"
+          checked
+        />100%</label
+      >
+      <label>
+        <input
+          name="new-information"
+          value="75"
+          type="radio"
+          class="input-radio"
+        />75%</label
+      >
+
+      <label
+        ><input
+          name="new-information"
+          value="50"
+          type="radio"
+          class="input-radio"
+        />50%</label
+      >
+      
+      <label
+        ><input
+          name="new-information"
+          value="25"
+          type="radio"
+          class="input-radio"
+        />25%</label
+      >
+      
+      <label
+        ><input
+          name="new-information"
+          value="0"
+          type="radio"
+          class="input-radio"
+        />0%</label
+      >
+      
+    </div>
+    
+    <div class="form-group">
+      <p>Would you recommend this webinar to a friend?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not sure</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        What is your favorite topic about this webinar?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="msoffice"> Microsoft Office</option>
+        <option value="photo">Photo Ediitng</option>
+        <option value="video">Video Editing</option>
+        <option value="online">Online Account Updating </option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What would you like to see improved?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="micorsoft-office"
+          type="checkbox"
+          class="input-checkbox"
+        />Mircosoft Office</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="photo-editing"
+          type="checkbox"
+          class="input-checkbox"
+        />Photo Editing</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="video-editng"
+          type="checkbox"
+          class="input-checkbox"
+        />Video Ediitng</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="online"
+          type="checkbox"
+          class="input-checkbox"
+        /> Online Account Updating</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="all"
+          type="checkbox"
+          class="input-checkbox"
+        /> All of the above</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+</html>
